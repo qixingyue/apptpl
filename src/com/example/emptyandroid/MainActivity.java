@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.leveldb.lib.*;
 
 public class MainActivity extends Activity {
 
@@ -11,6 +14,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		TextView tv = (TextView) findViewById(R.id.tvInfomationFromLevelDB);
+		tv.setText(DBHelper.getInstance(this).getObject("hello").toString());
 	}
 
 	@Override
