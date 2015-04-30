@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">emptyandroid</string>
+    <string-array name="tab_title">
+		<item>星</item>
+		<item>影</item> 
+		<item>月</item> 
+		<item>光</item> 
+    </string-array>
+    
+    <string name="app_name">simpleTab</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
